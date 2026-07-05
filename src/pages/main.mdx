@@ -1,26 +1,97 @@
 ---
-layout: "../layouts/HomepageLayout.astro"
+layout: "../layouts/ExhibitLayout.astro"
 title: "GPU Wars"
 author: "Surname, Firstname; Surname2, Firstname2"
-readingTime: "67 minutes"
+readingTime: "10 minutes"
 ---
 
 import Header from "../components/Header.astro";
-
-import Prologue from "../components/Prologue.astro";
-import TimelineSection from "../components/TimelineSection.astro";
-import Lab from "../components/Lab.astro";
-import Archives from "../components/Archives.astro";
-import Crew from "../components/Crew.astro";
+import InteractiveTimeline from "../components/InteractiveTimeline.jsx";
 
 <Header />
 
-<Prologue />
+<section id="prologue">
 
-<TimelineSection />
+# THE GPU STRIKES BACK
 
-<Lab />
+From gaming graphics to artificial intelligence, discover how graphics processors evolved into one of the world's most important computing technologies.
 
-<Archives />
+---
 
-<Crew />
+## Featured GPUs
+
+- 3DFX Voodoo Graphics
+- GeForce 256
+- CUDA
+- RTX 20 Series
+- AI Supercomputing Era
+
+---
+
+## Sector Briefings
+
+- Before the GPU
+- 3DFX Voodoo Graphics
+- GeForce 256
+- CUDA
+- RTX
+- AI Era
+
+---
+
+## Intel Tags
+
+`Hardware`
+`Gaming`
+`CUDA`
+`RTX`
+`AI`
+`NVIDIA`
+
+---
+
+## Rebel Crew
+
+- Bendol, Trisha Mae R.
+- Camato, Karl Kristoffer R.
+- Descalzo, Alberto Miguel T.
+- Gregorio, John Marc Joepherl M.
+- Martin, Kurt Nehemiah Z.
+
+</section>
+
+<section id="timeline">
+
+# Interactive Timeline
+
+<InteractiveTimeline client:load />
+
+</section>
+
+<section id="lab">
+
+# GPU Architecture Lab
+
+Coming soon...
+
+</section>
+
+<section id="archives">
+
+# Archives
+
+Historical photographs
+
+Interesting facts
+
+References
+
+</section>
+
+<section id="crew">
+
+# Meet the Crew
+
+GPU Wars Development Team
+
+</section>
