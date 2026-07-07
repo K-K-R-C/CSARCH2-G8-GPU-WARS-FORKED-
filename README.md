@@ -276,3 +276,9 @@ Helps users visually understand how GPU architecture evolved over time in terms 
 | `ArchitectureExplorer.jsx` | GPU architecture breakdown viewer |
 | `GPUComparisonTool.jsx` | Side-by-side GPU generation comparison |
 | `GPUInfoCard.jsx` | Displays structured GPU details |
+
+## Deployment & System Support
+
+**Live Site:** [https://k-k-r-c.github.io/CSARCH2-G8-GPU-WARS-FORKED-/](https://k-k-r-c.github.io/CSARCH2-G8-GPU-WARS-FORKED-/)
+
+Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automatically rebuilds and redeploys whenever changes are pushed to the `main` branch.
