@@ -7,60 +7,68 @@ readingTime: "5 minutes"
 ---
 
 import Header from "../components/Header.astro";
+import '../styles/gpu-theme.css';
 
 <Header />
 
+<div class="exhibit-theme">
+
+<span class="pin-label">Museum Entrance</span>
+
 # GPU Wars: Five Turning Points That Changed Computing
 
-## Museum Entrance
+*Welcome to the virtual exhibit exploring the remarkable evolution of the Graphics Processing Unit (GPU) — from a specialized graphics accelerator to one of the most influential computing technologies of the modern era.*
 
-*Welcome to the virtual exhibit exploring the remarkable evolution of the Graphics Processing Unit (GPU)—from a specialized graphics accelerator to one of the most influential computing technologies of the modern era.*
-
----
+<hr class="trace-divider" />
 
 ## Welcome
 
-The **GPU Wars Virtual Exhibit** invites you to explore one of the most significant transformations in computer architecture! What began as dedicated hardware for rendering graphics has evolved into a massively parallel computing platform that powers artificial intelligence, scientific research, high-performance computing, and modern interactive experiences.
+The **GPU Wars Virtual Exhibit** invites you to explore one of the most significant transformations in computer architecture. What began as dedicated hardware for rendering graphics has evolved into a massively parallel computing platform that powers artificial intelligence, scientific research, high-performance computing, and modern interactive experiences.
 
-This exhibit is organized as a series of galleries. Each section highlights a different stage in the GPU's evolution, allowing you to explore at your own pace and discover how technological innovation and industry competition reshaped modern computing, though following the recommended sequence provides a deeper understanding of how GPU technology evolved over time.
+This exhibit is organized as a series of galleries. Each section highlights a different stage in the GPU's evolution, allowing you to explore at your own pace — though following the recommended sequence gives the deepest sense of how the technology evolved over time.
 
----
+<hr class="trace-divider" />
 
 ## Explore the Exhibit
 
-Your journey through the museum is divided into six galleries:
+<div class="ic-grid">
+  <div class="ic-card">
+    <a href="/introduction">Introduction: Rise of GPUs</a>
+    <p>Learn what GPUs are and why they became essential to modern computing.</p>
+  </div>
+  <div class="ic-card">
+    <a href="/before-gpus">Before GPUs</a>
+    <p>Discover how CPUs handled graphics before dedicated hardware existed.</p>
+  </div>
+  <div class="ic-card">
+    <a href="/turning-points">Five Turning Points</a>
+    <p>The pivotal milestones that transformed graphics accelerators into computing platforms.</p>
+  </div>
+  <div class="ic-card">
+    <a href="/architecture">GPU Architecture Evolution</a>
+    <p>The progression from fixed-function hardware to programmable, AI-accelerated design.</p>
+  </div>
+  <div class="ic-card">
+    <a href="/gpu-wars">GPU Wars</a>
+    <p>How competition between manufacturers drove GPU innovation forward.</p>
+  </div>
+  <div class="ic-card">
+    <a href="/conclusion">Conclusion &amp; Legacy</a>
+    <p>The GPU's lasting impact on gaming, science, and artificial intelligence.</p>
+  </div>
+</div>
 
-- **[Introduction: Rise of GPUs](/introduction)**
-  Learn what GPUs are and why they became essential to modern computing.
-
-- **[Before GPUs](/before-gpus)**
-  Discover how CPUs handled graphics before dedicated graphics hardware existed and why new solutions became necessary.
-
-- **[Five Turning Points](/turning-points)**
-  Explore the pivotal milestones that transformed graphics accelerators into powerful computing platforms.
-
-- **[GPU Architecture Evolution](/architecture)**
-  Follow the progression of GPU design from fixed-function hardware to programmable and AI-accelerated architectures.
-
-- **[GPU Wars](/gpu-wars)**
-  See how competition between leading manufacturers drove innovation across multiple generations of GPU technology.
-
-- **[Conclusion & Legacy](/conclusion)**
-  Reflect on the GPU's lasting impact on gaming, scientific computing, and artificial intelligence.
-
----
+<hr class="trace-divider" />
 
 ## Begin the Interactive Journey
 
 One of the highlights of this exhibit is an **interactive timeline** showcasing five defining moments in GPU history. Follow each milestone to see how architectural innovations and industry competition shaped the technology we rely on today.
 
-**Start exploring here:** **[Five Turning Points →](/turning-points)**
+<a href="/turning-points" class="trace-button">Five Turning Points &rarr;</a>
 
----
+<hr class="trace-divider" />
 
 ## What You'll Experience
-
-Throughout the exhibit, visitors will encounter interactive elements designed to make GPU history and architecture more engaging, including:
 
 - Interactive timeline exploration
 - Visual architecture breakdowns
@@ -68,12 +76,9 @@ Throughout the exhibit, visitors will encounter interactive elements designed to
 - Industry competition overviews
 - Educational comparisons across GPU generations
 
----
+<p class="credit-line">
+CSARCH2 Virtual Computer Architecture Exhibit &mdash; Group 8 — GPU Wars<br />
+Built using Astro, React, and MDX
+</p>
 
-<sub>
-
-**CSARCH2 Virtual Computer Architecture Exhibit**
-**Group 8 — GPU Wars**
-Built using **Astro**, **React**, and **MDX**
-
-</sub>
+</div>
