@@ -269,14 +269,13 @@ Helps users visually understand how GPU architecture evolved over time in terms 
 <img width="1900" height="1197" alt="720919235_1349271170421287_3978395389256981937_n" src="https://github.com/user-attachments/assets/5d5b772c-dcc1-4af2-9d60-8eee21c73233" />
 
 
-## V. Planned React Components
+## V. Planned React Components (Updated)
 
 | Component | Purpose |
 |-----------|---------|
 | `InteractiveTimeline.jsx` | Main timeline of GPU milestones |
 | `TimelineEvent.jsx` | Individual timeline entries |
 | `ArchitectureExplorer.jsx` | GPU architecture breakdown viewer |
-| `GPUComparisonTool.jsx` | Side-by-side GPU generation comparison |
 | `GPUInfoCard.jsx` | Displays structured GPU details |
 
 ---
@@ -295,10 +294,72 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
 
 ## Things done
  - Created 7 exhibit pages for viewers to explore through
-   - 01-main.mdx
-   - 02-introduction.mdx
-   - 03-before-gpus.mdx
-   - 04-turning-points.mdx
-   - 05-architecture.mdx
-   - 06-gpu-wars.mdx
-   - 07-conclusion.mdx
+   - 01-main.mdx (main page where users are welcomed into exhibit and have freedom to explore)
+   - 02-introduction.mdx (more of light context and definitions to strengthen base knowledge of GPUs)
+   - 03-before-gpus.mdx (Explains how computers handled graphics before GPUs existed, and how growing visual demands led to the creation of dedicated graphics hardware)
+   - 04-turning-points.mdx (Highlights 5 major moments in GPU history, also includes interactive timeline)
+   - 05-architecture.mdx (Explains how GPU designs evolved from simple graphics hardware into flexible and powerful processors built for graphics, computing, and AI)
+   - 06-gpu-wars.mdx (Explores how competition between GPU companies pushed innovation and shaped the powerful graphics and computing technologies we use today)
+   - 07-conclusion.mdx (Summarizes how GPUs evolved from graphics tools into essential technologies that power modern computing, AI, and other scientific advancements)
+
+ - Added disclosure of use of AI/LLM (bottom of page)
+ - Added references of the sites used for research (also at the bottom of page)
+
+## Aha Moments
+ - A way to get around Github's file ordering is to add number ordering on the actual file names themselves
+ - It's super important to pay attention to how configs are set up in astro.config.mjs, and also how the paths are written
+
+## Things learned
+ - More knowledge and context behind GPU and how it developed over the years (and also its contributions in modern technology)
+ - General structures and how .jsx and .mdx files coordinate with each other.
+
+## Challenges
+ - Ordering the pages accordingly in the website (change file names, change paths for each link, etc.)
+ - Learning and getting used to routing with astro (had to fix so many 404 errs)
+
+## To-do for Final Submission
+ - Add images to complement page contents
+   - Also for interactive timeline and gpu architecture explorer components
+ - Proofread contents with the references to ensure they are accurate
+
+---
+
+## Disclosure of AI and LLM Use
+
+AI/LLM used:
+ - ChatGPT (For generating general outline and page structure ideas, and also brainstorming different GPU topics/areas for further research
+---
+
+## References
+
+What Is a GPU? Graphics Processing Units Defined. (2026). Intel. https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html
+
+Flinders, M., Susnjara, S., & Smalley, I. (2025, November 17). GPU. Ibm.Com. https://www.ibm.com/think/topics/gpu
+
+1.1. Introduction — CUDA Programming Guide. (2026). Nvidia.Com. https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/introduction.html
+
+Singer, G. (2013, March 27). The History of the Modern Graphics Processor. TechSpot. https://www.techspot.com/article/650-history-of-the-gpu/
+
+Hemmendinger, D. (1998, July 20). Computer graphics | Rendering, Animation, Shading, Texturing, Processor, Artificial Intelligence, Neural Network, Deep Learning, & Visualization. Encyclopedia Britannica. https://www.britannica.com/topic/computer-graphics
+
+JasonLake. (2025, February 23). The Evolution of CPUs and GPUs: A Historical Perspective. Orhanergun.Net; OrhanErgun.net. https://orhanergun.net/the-evolution-of-cpus-and-gpus-a-historical-perspective
+
+Tech Desk, T. (2026, July 3). In 1999, NVIDIA introduced the GeForce 256, helping graphics chips handle modern visual computing. The Times of India; The Times Of India. https://timesofindia.indiatimes.com/technology/tech-news/in-1999-nvidia-introduced-the-geforce-256-helping-graphics-chips-handle-modern-visual-computing/articleshow/132135990.cms
+
+Gupta, P. (2020, April 24). CUDA Refresher: Reviewing the Origins of GPU Computing. NVIDIA Technical Blog. https://developer.nvidia.com/blog/cuda-refresher-reviewing-the-origins-of-gpu-computing/
+
+Young, K. (2023, December 7). 500 Games and Apps Now Powered by RTX: A DLSS and Ray-Tracing Milestone. NVIDIA Blog. https://blogs.nvidia.com/blog/500-geforce-rtx/
+
+NVIDIA RTX Technology. (2020). Nvidia. https://www.nvidia.com/en-gb/technologies/rtx/
+
+Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet Classification with Deep Convolutional Neural Networks. Communications of the ACM, 60(6), 84–90.
+
+Andersch, M. (2022, March 22). NVIDIA Hopper Architecture In-Depth. NVIDIA Technical Blog. https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/
+
+Micron Technology. (2024, December 6). The evolution of GDDR: From GDDR1 to GDDR7. Https://Twitter.Com/MicronTech; Micron. https://www.micron.com/about/blog/memory/dram/the-evolution-of-gddr-from-gddr1-to-gddr7
+
+Hayes, A. (2017, May 24). AMD vs. Nvidia: Who Dominates GPUs? Investopedia. https://www.investopedia.com/news/amd-versus-nvdia-amd-nvda/
+
+Box.co.uk. (2026). Box.Co.Uk. https://box.co.uk/blog/nvidia-amd-intel-gpu-comparison
+
+---
