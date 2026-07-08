@@ -308,14 +308,17 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
 ## Aha Moments
  - A way to get around Github's file ordering is to add number ordering on the actual file names themselves
  - It's super important to pay attention to how configs are set up in astro.config.mjs, and also how the paths are written
+ - Separating the timeline data from the React components made everything way easier to manage. I only had to update the data file whenever we added or changed GPU milestones instead of editing the component itself.
 
 ## Things learned
  - More knowledge and context behind GPU and how it developed over the years (and also its contributions in modern technology)
  - General structures and how .jsx and .mdx files coordinate with each other.
+ - Learned how to build reusable React components by passing data through props instead of hardcoding content.
 
 ## Challenges
  - Ordering the pages accordingly in the website (change file names, change paths for each link, etc.)
  - Learning and getting used to routing with astro (had to fix so many 404 errs)
+ - Figuring out how to make the timeline interactive while keeping it reusable for future updates.
 
 ## To-do for Final Submission
  - Add images to complement page contents
