@@ -327,7 +327,7 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
 ## Disclosure of AI and LLM Use
 
 AI/LLM used:
- - ChatGPT (For generating general outline and page structure ideas, and also brainstorming different GPU topics/areas for further research
+ - ChatGPT (For generating general outline and page structure ideas, and also brainstorming different GPU topics/areas for further research)
 ---
 
 ## References
