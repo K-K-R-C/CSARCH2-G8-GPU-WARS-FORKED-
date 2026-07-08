@@ -279,8 +279,26 @@ Helps users visually understand how GPU architecture evolved over time in terms 
 | `GPUComparisonTool.jsx` | Side-by-side GPU generation comparison |
 | `GPUInfoCard.jsx` | Displays structured GPU details |
 
+---
+
+# MID-MILESTONE DOCUMENTATION
+
+---
+
 ## Deployment & System Support
 
 **Live Site:** [https://k-k-r-c.github.io/CSARCH2-G8-GPU-WARS-FORKED-/](https://k-k-r-c.github.io/CSARCH2-G8-GPU-WARS-FORKED-/)
 
 Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automatically rebuilds and redeploys whenever changes are pushed to the `main` branch.
+
+---
+
+## Things done
+ - Created 7 exhibit pages for viewers to explore through
+   - 01-main.mdx
+   - 02-introduction.mdx
+   - 03-before-gpus.mdx
+   - 04-turning-points.mdx
+   - 05-architecture.mdx
+   - 06-gpu-wars.mdx
+   - 07-conclusion.mdx
