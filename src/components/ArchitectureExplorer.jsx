@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../styles/architecture-explorer.css";
 
 const gpuGenerations = [
   {
@@ -47,25 +48,29 @@ export default function ArchitectureExplorer() {
   const [activeGpu, setActiveGpu] = useState(gpuGenerations[0]);
 
   return (
-    <div style={{ padding: '1.5rem', backgroundColor: '#1e1f22', border: '1px solid #333', borderRadius: '8px', color: '#e1e1e1', fontFamily: 'sans-serif', margin: '2rem 0' }}>
-      <h3 style={{ marginTop: 0, color: '#fff' }}>Interactive GPU Architecture Explorer</h3>
+      <div className="architecture-explorer">
+      <div className="explorer-header">
+        <h3>
+            GPU Architecture Explorer
+        </h3>
+
+        <p>
+            Explore how GPUs evolved from fixed-function graphics
+            hardware into AI-powered parallel processors.
+        </p>
+      </div>
       
       {/* Navigation Tabs */}
-      <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
+        <div className="gpu-tabs">
         {gpuGenerations.map((gpu) => (
           <button
             key={gpu.id}
             onClick={() => setActiveGpu(gpu)}
-            style={{
-              padding: '0.6rem 1rem',
-              backgroundColor: activeGpu.id === gpu.id ? '#bc52ee' : '#2d2f33',
-              color: '#fff',
-              border: '1px solid #444',
-              borderRadius: '6px',
-              cursor: 'pointer',
-              fontWeight: activeGpu.id === gpu.id ? 'bold' : 'normal',
-              transition: 'all 0.2s ease-in-out'
-            }}
+            className={
+                activeGpu.id === gpu.id
+                ? "gpu-tab active"
+                : "gpu-tab"
+            }
           >
             {gpu.name}
           </button>
@@ -73,30 +78,30 @@ export default function ArchitectureExplorer() {
       </div>
 
       {/* Content Display Panel */}
-      <div style={{ backgroundColor: '#0d1117', padding: '1.5rem', borderRadius: '6px', border: '1px solid #30363d' }}>
-        <h4 style={{ marginTop: 0, color: '#bc52ee', fontSize: '1.3rem', borderBottom: '1px solid #333', paddingBottom: '10px' }}>
+      <div className="gpu-info-card">
+        <h4 className="gpu-title">
           {activeGpu.name}
         </h4>
         
         <p style={{ fontSize: '1.1rem' }}><strong>Primary Purpose:</strong> {activeGpu.purpose}</p>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', marginTop: '1.5rem' }}>
+        <div className="gpu-details">
           <div>
-            <strong style={{ color: '#8b949e' }}>Key Architectural Features:</strong>
+            <strong style={{ color: '#c9a84c' }}>Key Architectural Features:</strong>
             <ul style={{ paddingLeft: '1.2rem', marginTop: '0.5rem', lineHeight: '1.6' }}>
               {activeGpu.features.map((item, i) => <li key={i}>{item}</li>)}
             </ul>
           </div>
           
           <div>
-            <strong style={{ color: '#8b949e' }}>Supported Workloads:</strong>
+            <strong style={{ color: '#c9a84c' }}>Supported Workloads:</strong>
             <ul style={{ paddingLeft: '1.2rem', marginTop: '0.5rem', lineHeight: '1.6' }}>
               {activeGpu.workloads.map((item, i) => <li key={i}>{item}</li>)}
             </ul>
           </div>
           
           <div>
-            <strong style={{ color: '#8b949e' }}>Major Innovations:</strong>
+            <strong style={{ color: '#c9a84c' }}>Major Innovations:</strong>
             <ul style={{ paddingLeft: '1.2rem', marginTop: '0.5rem', lineHeight: '1.6' }}>
               {activeGpu.innovations.map((item, i) => <li key={i}>{item}</li>)}
             </ul>
