@@ -6,25 +6,44 @@ author: "Bendol, Trisha Mae R.; Camato, Karl Kristoffer R.; Descalzo, Alberto Mi
 readingTime: "5 minutes"
 ---
 
+import TextWithImage from "../components/TextWithImage.astro";
+
+import modernGpu from "../assets/modernGpu.jpg";
+import cpuVsGpu from "../assets/cpuVsGpu.jpg";
+
 # The Rise of the Graphics Processing Unit
 
-## From Graphics Hardware to General Computing Power
-
+<TextWithImage
+    heading="From Graphics Hardware to General Computing Power"
+    body={`
 GPUs power much of the technology people interact with every day—modern video games, AI tools, creative software, and scientific simulations all rely on them in some form. In many cases, users benefit from GPU acceleration without even realizing it.
 
 Yet GPUs were not originally designed for general-purpose computing. They began as specialized hardware built for a single purpose: rendering graphics efficiently for real-time visual output.
+`}
+    imageSrc={modernGpu.src}
+    imageAlt="Examples of modern GPU applications such as gaming, artificial intelligence, scientific computing, and creative software."
+    imageCaption="Modern GPUs accelerate graphics rendering, AI workloads, scientific research, and digital content creation."
+/>
 
 ---
 
-## What is a GPU?
-
+<TextWithImage
+    heading="What is a GPU?"
+    body={`
 A **Graphics Processing Unit (GPU)** is a processor designed primarily to accelerate graphics rendering and image processing.
 
 Unlike a CPU, which is built to handle a small number of complex tasks one after another, a GPU is designed to handle many simpler tasks at the same time. This makes it especially effective for workloads that can be processed in parallel.
 
 At a basic level:
-- **CPU** --> handles sequential, general-purpose computation
-- **GPU** --> handles large-scale parallel computation for graphics and similar workloads
+
+- **CPU** → Handles sequential, general-purpose computation
+- **GPU** → Handles large-scale parallel computation for graphics and similar workloads
+`}
+    imageSrc={cpuVsGpu.src}
+    imageAlt="Comparison of CPU and GPU architectures showing sequential and parallel processing."
+    imageCaption="CPUs excel at sequential processing, while GPUs are optimized for parallel workloads."
+    reverse={true}
+/>
 
 ---
 
