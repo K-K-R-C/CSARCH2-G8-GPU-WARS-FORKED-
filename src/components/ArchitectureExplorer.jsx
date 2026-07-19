@@ -10,7 +10,7 @@ const gpuGenerations = [
   {
     id: 'voodoo',
     name: 'Voodoo Graphics (1996)',
-    image: voodooGraphics,
+    image: voodooGraphics.src,
     imageAlt: "3dfx Voodoo Graphics card, an early consumer 3D graphics accelerator.",
     purpose: '3D Graphics Acceleration',
     features: ['Fixed-function pipeline', 'Hardware rasterization', 'Single-cycle texture mapping'],
@@ -20,7 +20,7 @@ const gpuGenerations = [
   {
     id: 'geforce256',
     name: 'GeForce 256 (1999)',
-    image: geforce256,
+    image: geforce256.src,
     imageAlt: "NVIDIA GeForce 256 graphics card, one of the first GPUs marketed as a graphics processing unit.",
     purpose: 'Advanced 3D Rendering',
     features: ['Hardware Transform and Lighting (T&L)', 'Single-chip 2D/3D video accelerator'],
@@ -30,7 +30,7 @@ const gpuGenerations = [
   {
     id: 'cuda',
     name: 'CUDA-era GPUs (2007)',
-    image: cuda,
+    image: cuda.src,
     imageAlt: "NVIDIA GeForce 8800 GTX, the first graphics card to support CUDA and general-purpose GPU computing.",
     purpose: 'General-Purpose Parallel Computing',
     features: ['Unified shader architecture', 'Streaming Multiprocessors (SMs)', 'SIMT execution'],
@@ -40,7 +40,7 @@ const gpuGenerations = [
   {
     id: 'rtx',
     name: 'RTX GPUs (2018)',
-    image: rtx20,
+    image: rtx20.src,
     imageAlt: "NVIDIA GeForce RTX 2080 Founders Edition graphics card from the RTX 20 Series, introducing dedicated RT Cores for real-time ray tracing and Tensor Cores for AI acceleration.",
     purpose: 'Real-Time Ray Tracing and AI Rendering',
     features: ['RT Cores', 'Tensor Cores', 'Concurrent integer/floating-point execution'],
@@ -50,7 +50,7 @@ const gpuGenerations = [
   {
     id: 'ai',
     name: 'AI-Accelerated Architectures (2022-Present)',
-    image: aiSuperComputer,
+    image: aiSuperComputer.src,
     imageAlt: "NVIDIA Eos AI supercomputer, a large-scale GPU cluster featuring NVIDIA H100 GPUs, representing the modern era of large-scale AI computing and GPU-accelerated supercomputing.",
     purpose: 'AI Training and Inference',
     features: ['Transformer Engines', 'High Bandwidth Memory (HBM)', 'Massive scale parallelism'],
