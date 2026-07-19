@@ -1,0 +1,85 @@
+.architecture-explorer {
+    padding: 2rem;
+    background: #05060f;
+    border: 1px solid #1a2a1a;
+    border-radius: 18px;
+    color:#ffffff;
+    margin:3rem 0;
+}
+
+.explorer-header {
+    margin-bottom: 2rem;
+}
+
+
+.explorer-header h3 {
+    font-size: 2rem;
+    color: #c9a84c;
+    margin-bottom: .5rem;
+}
+
+
+.explorer-header p {
+    color: #ffffff;
+    opacity: .8;
+    line-height: 1.6;
+}
+
+.gpu-tabs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.gpu-tab {
+    padding: .8rem 1.2rem;
+    background: #080d08;
+    color: #ffffff;
+    border: 1px solid #1a2a1a;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.gpu-tab:hover {
+    transform: translateY(-3px);
+    border-color: #3a7a3a;
+    background: #1a2a1a;
+}
+
+.gpu-tab.active {
+    background: #3a7a3a;
+    border-color: #c9a84c;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(58, 122, 58, .6);
+}
+
+.gpu-info-card {
+    background: #080d08;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid #1a2a1a;
+}
+
+.gpu-title {
+    color: #c9a84c;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #3a7a3a;
+    padding-bottom: 1rem;
+}
+
+.gpu-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gpu-details strong {
+    color: #3a7a3a;
+}
+
+.gpu-details li {
+    line-height: 1.6;    
+}

@@ -1,17 +1,9 @@
 import React, { useState } from 'react';
 
-import voodooGraphics from "../assets/voodooGraphics.jpg";
-import geforce256 from "../assets/geforce256.jpg";
-import cuda from "../assets/cuda.jpg";
-import rtx20 from "../assets/rtx20.jpg";
-import aiSuperComputer from "../assets/aiSuperComputer.png";
-
 const gpuGenerations = [
   {
     id: 'voodoo',
     name: 'Voodoo Graphics (1996)',
-    image: voodooGraphics,
-    imageAlt: "3dfx Voodoo Graphics card, an early consumer 3D graphics accelerator.",
     purpose: '3D Graphics Acceleration',
     features: ['Fixed-function pipeline', 'Hardware rasterization', 'Single-cycle texture mapping'],
     workloads: ['Early 3D PC Games', 'Software-to-hardware rendering transition'],
@@ -20,8 +12,6 @@ const gpuGenerations = [
   {
     id: 'geforce256',
     name: 'GeForce 256 (1999)',
-    image: geforce256,
-    imageAlt: "NVIDIA GeForce 256 graphics card, one of the first GPUs marketed as a graphics processing unit.",
     purpose: 'Advanced 3D Rendering',
     features: ['Hardware Transform and Lighting (T&L)', 'Single-chip 2D/3D video accelerator'],
     workloads: ['Complex 3D games', 'Early CAD applications'],
@@ -30,8 +20,6 @@ const gpuGenerations = [
   {
     id: 'cuda',
     name: 'CUDA-era GPUs (2007)',
-    image: cuda,
-    imageAlt: "NVIDIA GeForce 8800 GTX, the first graphics card to support CUDA and general-purpose GPU computing.",
     purpose: 'General-Purpose Parallel Computing',
     features: ['Unified shader architecture', 'Streaming Multiprocessors (SMs)', 'SIMT execution'],
     workloads: ['Scientific simulations', 'Video rendering', 'Early deep learning'],
@@ -40,8 +28,6 @@ const gpuGenerations = [
   {
     id: 'rtx',
     name: 'RTX GPUs (2018)',
-    image: rtx20,
-    imageAlt: "NVIDIA GeForce RTX 2080 Founders Edition graphics card from the RTX 20 Series, introducing dedicated RT Cores for real-time ray tracing and Tensor Cores for AI acceleration.",
     purpose: 'Real-Time Ray Tracing and AI Rendering',
     features: ['RT Cores', 'Tensor Cores', 'Concurrent integer/floating-point execution'],
     workloads: ['Photorealistic gaming', '3D animation', 'AI upscaling (DLSS)'],
@@ -49,13 +35,11 @@ const gpuGenerations = [
   },
   {
     id: 'ai',
-    name: 'AI-Accelerated Architectures (2022-Present)',
-    image: aiSuperComputer,
-    imageAlt: "NVIDIA Eos AI supercomputer, a large-scale GPU cluster featuring NVIDIA H100 GPUs, representing the modern era of large-scale AI computing and GPU-accelerated supercomputing.",
+    name: 'AI Accelerators (2022-Present)',
     purpose: 'AI Training and Inference',
     features: ['Transformer Engines', 'High Bandwidth Memory (HBM)', 'Massive scale parallelism'],
     workloads: ['Large Language Models (LLMs)', 'Generative AI', 'Supercomputing'],
-    innovations: ['Established GPUs as core infrastructure for large-scale AI computing']
+    innovations: ['GPU becomes core infrastructure for the AI revolution']
   }
 ];
 
@@ -90,19 +74,6 @@ export default function ArchitectureExplorer() {
 
       {/* Content Display Panel */}
       <div style={{ backgroundColor: '#0d1117', padding: '1.5rem', borderRadius: '6px', border: '1px solid #30363d' }}>
-        <img
-          src={activeGpu.image}
-          alt={activeGpu.imageAlt}
-          style={{
-            width: '100%',
-            maxHeight: '300px',
-            objectFit: 'contain',
-            backgroundColor: '#111',
-            borderRadius: '6px',
-            marginBottom: '1.5rem'
-          }}
-        />
-
         <h4 style={{ marginTop: 0, color: '#bc52ee', fontSize: '1.3rem', borderBottom: '1px solid #333', paddingBottom: '10px' }}>
           {activeGpu.name}
         </h4>

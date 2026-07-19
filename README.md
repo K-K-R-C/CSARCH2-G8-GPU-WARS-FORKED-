@@ -304,23 +304,35 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
 
  - Added disclosure of use of AI/LLM (bottom of page)
  - Added references of the sites used for research (also at the bottom of page)
+ - Verified the live deployment of the site via GitHub Pages
+ - Documented the deployment setup, including CI/CD automation
+ - Added deployment link to README
 
 ## Aha Moments
  - A way to get around Github's file ordering is to add number ordering on the actual file names themselves
  - It's super important to pay attention to how configs are set up in astro.config.mjs, and also how the paths are written
+ - Separating the timeline data from the React components made everything way easier to manage. We only had to update the data file whenever we added or changed GPU milestones instead of editing the component itself.
+ - Learned that GitHub Actions handles the entire build-and-deploy process automatically once the workflow file is set up, no manual uploading needed
+ - Realized the site rebuilds and redeploys on its own every time someone pushes to `main`
 
 ## Things learned
  - More knowledge and context behind GPU and how it developed over the years (and also its contributions in modern technology)
  - General structures and how .jsx and .mdx files coordinate with each other.
+ - Learned how to build reusable React components by passing data through props instead of hardcoding content.
+ - How GitHub Pages and GitHub Actions work together for CI/CD
+ - 
 
 ## Challenges
  - Ordering the pages accordingly in the website (change file names, change paths for each link, etc.)
  - Learning and getting used to routing with astro (had to fix so many 404 errs)
+ - Figuring out how to make the timeline interactive while keeping it reusable for future updates.
 
 ## To-do for Final Submission
  - Add images to complement page contents
    - Also for interactive timeline and gpu architecture explorer components
  - Proofread contents with the references to ensure they are accurate
+ - Double-check that `astro.config.mjs` site/base config matches the actual GitHub Pages URL to avoid potential broken asset paths
+ - Keep documentation updated
 
 ---
 
