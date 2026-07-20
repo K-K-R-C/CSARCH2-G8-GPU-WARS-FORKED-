@@ -364,7 +364,7 @@ Young, K. (2023, December 7). 500 Games and Apps Now Powered by RTX: A DLSS and 
 
 NVIDIA RTX Technology. (2020). Nvidia. https://www.nvidia.com/en-gb/technologies/rtx/
 
-Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet Classification with Deep Convolutional Neural Networks. Communications of the ACM, 60(6), 84–90.
+Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2017). ImageNet classification with deep convolutional neural networks. Communications of the ACM, 60(6), 84–90. https://doi.org/10.1145/3065386
 
 Andersch, M. (2022, March 22). NVIDIA Hopper Architecture In-Depth. NVIDIA Technical Blog. https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/
 
