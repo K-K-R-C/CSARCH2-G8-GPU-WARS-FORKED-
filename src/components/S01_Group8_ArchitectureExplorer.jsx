@@ -85,6 +85,16 @@ export default function S01_Group8_ArchitectureExplorer() {
 
       {/* Content Display Card */}
       <div className="arch-card">
+        <img
+          src={activeGpu.image}
+          alt={activeGpu.imageAlt}
+          style={{
+            width: "100%",
+            maxHeight: "300px",
+            objectFit: "contain"
+          }}
+        />
+        
         <h4>{activeGpu.name}</h4>
         <p className="arch-purpose">
           <strong>Primary Purpose:</strong> {activeGpu.purpose}
