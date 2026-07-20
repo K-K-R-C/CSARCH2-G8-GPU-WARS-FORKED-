@@ -29,6 +29,15 @@ export default function S01_Group8_InteractiveTimeline() {
       {/* Right Detail Pane */}
       {selectedEvent && (
         <div className="timeline-pane">
+          <img
+            src={selectedEvent.image}
+            alt={selectedEvent.imageAlt}
+            style={{
+              width: "100%",
+              maxHeight: "300px",
+              objectFit: "contain"
+            }}
+          />
           <p className="timeline-pane-year">ERA: {selectedEvent.year}</p>
           <h4 className="timeline-pane-title">{selectedEvent.title}</h4>
           <p className="timeline-pane-desc">{selectedEvent.description}</p>
