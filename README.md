@@ -1,7 +1,7 @@
 # CSARCH2-G8-GPU-WARS
 
 **Title**: GPU Wars: Five Turning Points That Changed Computing  
-**GitHub Link**: https://github.com/K-K-R-C/CSARCH2-G8-GPU-WARS/blob/main/README.md
+**GitHub Link**: [https://github.com/K-K-R-C/CSARCH2-G8-GPU-WARS/blob/main/README.md](https://github.com/K-K-R-C/CSARCH2-G8-GPU-WARS-FORKED-)
 
 **Live Site**: [https://k-k-r-c.github.io/CSARCH2-G8-GPU-WARS-FORKED-/](https://k-k-r-c.github.io/CSARCH2-G8-GPU-WARS-FORKED-/)
 
