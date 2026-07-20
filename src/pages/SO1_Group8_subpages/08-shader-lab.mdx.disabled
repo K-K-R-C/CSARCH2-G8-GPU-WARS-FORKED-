@@ -1,11 +1,11 @@
 ---
-layout: "../layouts/S01_Group8_GPUWarsLayout.astro"
+layout: "../../layouts/S01_Group8_GPUWarsLayout.astro"
 title: "Interactive Shader Lab"
 description: "Adjust ambient, diffuse, and specular parameters to see how Phong shading processes light on a 3D surface."
 author: "Bendol, Trisha Mae R.; Camato, Karl Kristoffer R.; Descalzo, Alberto Miguel T.; Gregorio, John Marc Joepherl M.; Martin, Kurt Nehemiah Z."
 readingTime: "3 minutes"
 ---
-import S01_Group8_ShaderLab from "../components/S01_Group8_ShaderLab.jsx";
+import S01_Group8_ShaderLab from "../../components/S01_Group8_ShaderLab.jsx";
 
 # The Holodeck: Phong Shader Simulator
 
