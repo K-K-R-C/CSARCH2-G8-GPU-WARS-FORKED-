@@ -6,6 +6,13 @@ author: "Bendol, Trisha Mae R.; Camato, Karl Kristoffer R.; Descalzo, Alberto Mi
 readingTime: "8 minutes"
 ---
 
+import TextWithImage from "../../components/TextWithImage.astro";
+
+import lanGaming90s from "../../assets/lanGaming90s.jpg";
+import nvidiaVsAti from "../../assets/nvidiaVsAti.jpg";
+import nvidiaAmdIntel from "../../assets/nvidiaAmdIntel.jpg";
+import aiSuperComputer from "../../assets/aiSuperComputer.png";
+
 # GPU Wars
 
 ## Competition That Shaped Modern Computing
@@ -18,8 +25,9 @@ Over time, GPUs shifted from fixed-function graphics processors into massively p
 
 ---
 
-## Early Era Competition: 3dfx vs NVIDIA
-
+<TextWithImage
+    heading="Early Era Competition: 3dfx vs NVIDIA"
+    body={`
 The first major GPU rivalry emerged in the late 1990s.
 
 At the time, 3D graphics were becoming mainstream in PC gaming, and two different design philosophies began to compete.
@@ -31,15 +39,20 @@ At the time, 3D graphics were becoming mainstream in PC gaming, and two differen
 
 However, NVIDIA’s approach prioritized flexibility. Instead of optimizing only for fixed rendering paths, its architecture was built to scale with future workloads.
 
-**Key shift:**
-> GPUs began moving away from fixed-function acceleration toward programmable designs.
+This rivalry marked a major shift in GPU design: GPUs began moving away from fixed-function acceleration toward programmable designs.
 
 Eventually, NVIDIA’s GeForce line overtook 3dfx, marking a turning point in GPU design philosophy.
+`}
+    imageSrc={lanGaming90s.src}
+    imageAlt="People playing PC games together in a 1990s LAN gaming setup."
+    imageCaption="The rise of PC gaming in the 1990s created demand for faster 3D graphics, driving competition between companies developing dedicated graphics hardware."
+/>
 
 ---
 
-## GPU Standardization Era: NVIDIA vs ATI/AMD
-
+<TextWithImage
+    heading="GPU Standardization Era: NVIDIA vs ATI/AMD"
+    body={`
 As the market matured, competition narrowed into a long-term rivalry between NVIDIA and ATI Technologies (later part of AMD).
 
 This era focused on refining programmable graphics pipelines.
@@ -54,13 +67,18 @@ Instead of designing hardware for specific visual effects, GPUs were increasingl
 
 ATI and NVIDIA pushed each other forward, rapidly improving performance and programmability across generations.
 
-**Key shift:**
-> GPUs transitioned from fixed pipelines into fully programmable parallel processors.
+GPUs transitioned from fixed pipelines into fully programmable parallel processors.
+`}
+    imageSrc={nvidiaVsAti.src}
+    imageAlt="NVIDIA and ATI graphics technology representing competition during the programmable graphics era."
+    imageCaption="Competition between NVIDIA and ATI drove advances in shader technology, memory bandwidth, and programmable GPU architectures."
+/>
 
 ---
 
-## Modern Era: NVIDIA vs AMD vs Intel
-
+<TextWithImage
+    heading="Modern Era: NVIDIA vs AMD vs Intel"
+    body={`
 In modern computing, GPU competition expanded into a three-way race:
 
 - **NVIDIA**
@@ -84,8 +102,12 @@ Each company now targets different strengths within the GPU ecosystem.
 - Targets mainstream and value segments
 - Expands competition in integrated and discrete graphics
 
-**Key shift:**
-> GPU competition is no longer just about gaming—it now includes AI, content creation, and large-scale computing.
+GPU competition is no longer just about gaming—it now includes AI, content creation, and large-scale computing.
+`}
+    imageSrc={nvidiaAmdIntel.src}
+    imageAlt="Comparison between NVIDIA, AMD, and Intel representing modern competition in GPU computing."
+    imageCaption="Modern GPU competition extends beyond gaming, with companies competing across graphics, AI acceleration, software ecosystems, and high-performance computing."
+/>
 
 ---
 
@@ -114,12 +136,27 @@ This led to several major architectural changes:
 
 ---
 
-## GPU Wars and the Rise of AI Computing
-
+<TextWithImage
+    heading="GPU Wars and the Rise of AI Computing"
+    body={`
 One of the most important outcomes of GPU competition is the rise of AI computing.
 
-**Key shift:**
-> Over time, improvements driven by gaming and graphics competition later enabled the rise of AI computing.
+GPUs became essential for machine learning because their parallel structure matches the needs of neural network training.
+
+Today:
+
+- Large AI models depend on GPU clusters
+- Supercomputers rely heavily on GPU acceleration
+- AI workloads drive most modern GPU innovation
+
+The dominance of GPU-based computing in AI was not planned in advance—it emerged from years of competitive pressure in graphics and performance.
+
+Over time, improvements driven by gaming and graphics competition later enabled the rise of AI computing.
+`}
+    imageSrc={aiSuperComputer.src}
+    imageAlt="NVIDIA Eos AI supercomputer, a large-scale GPU cluster featuring NVIDIA H100 GPUs, representing the modern era of large-scale AI computing and GPU-accelerated supercomputing."
+    imageCaption="Modern GPUs have become essential for AI acceleration and high-performance computing, extending their role beyond traditional graphics workloads."
+/>
 
 ---
 
