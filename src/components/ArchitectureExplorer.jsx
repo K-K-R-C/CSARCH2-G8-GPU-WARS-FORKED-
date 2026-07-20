@@ -5,6 +5,7 @@ import geforce256 from "../assets/geforce256.jpg";
 import cuda from "../assets/cuda.jpg";
 import rtx20 from "../assets/rtx20.jpg";
 import aiSuperComputer from "../assets/aiSuperComputer.png";
+import "../styles/architecture-explorer.css";
 
 const gpuGenerations = [
   {
@@ -63,25 +64,22 @@ export default function ArchitectureExplorer() {
   const [activeGpu, setActiveGpu] = useState(gpuGenerations[0]);
 
   return (
-    <div style={{ padding: '1.5rem', backgroundColor: '#1e1f22', border: '1px solid #333', borderRadius: '8px', color: '#e1e1e1', fontFamily: 'sans-serif', margin: '2rem 0' }}>
-      <h3 style={{ marginTop: 0, color: '#fff' }}>Interactive GPU Architecture Explorer</h3>
+    <div className="architecture-explorer">
+    <div className="explorer-header"> 
+      <h3>Interactive GPU Architecture Explorer</h3>
+    </div>
       
       {/* Navigation Tabs */}
-      <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
+      <div className="gpu-tabs">
         {gpuGenerations.map((gpu) => (
           <button
             key={gpu.id}
             onClick={() => setActiveGpu(gpu)}
-            style={{
-              padding: '0.6rem 1rem',
-              backgroundColor: activeGpu.id === gpu.id ? '#bc52ee' : '#2d2f33',
-              color: '#fff',
-              border: '1px solid #444',
-              borderRadius: '6px',
-              cursor: 'pointer',
-              fontWeight: activeGpu.id === gpu.id ? 'bold' : 'normal',
-              transition: 'all 0.2s ease-in-out'
-            }}
+            className={
+              activeGpu.id === gpu.id
+                ? "gpu-tab active"
+                : "gpu-tab"
+            }
           >
             {gpu.name}
           </button>
@@ -89,27 +87,21 @@ export default function ArchitectureExplorer() {
       </div>
 
       {/* Content Display Panel */}
-      <div style={{ backgroundColor: '#0d1117', padding: '1.5rem', borderRadius: '6px', border: '1px solid #30363d' }}>
+        <div key={activeGpu.id} className="gpu-info-card">
         <img
-          src={activeGpu.image}
-          alt={activeGpu.imageAlt}
-          style={{
-            width: '100%',
-            maxHeight: '300px',
-            objectFit: 'contain',
-            backgroundColor: '#111',
-            borderRadius: '6px',
-            marginBottom: '1.5rem'
-          }}
+            key={activeGpu.id + "-image"}
+            src={activeGpu.image}
+            alt={activeGpu.imageAlt}
+            className="gpu-image"
         />
 
-        <h4 style={{ marginTop: 0, color: '#bc52ee', fontSize: '1.3rem', borderBottom: '1px solid #333', paddingBottom: '10px' }}>
+        <h4 key={activeGpu.id + "-title"} className="gpu-title">
           {activeGpu.name}
         </h4>
         
-        <p style={{ fontSize: '1.1rem' }}><strong>Primary Purpose:</strong> {activeGpu.purpose}</p>
+        <p className="gpu-purpose"><strong>Primary Purpose:</strong> {activeGpu.purpose}</p>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', marginTop: '1.5rem' }}>
+        <div className="gpu-details">
           <div>
             <strong style={{ color: '#8b949e' }}>Key Architectural Features:</strong>
             <ul style={{ paddingLeft: '1.2rem', marginTop: '0.5rem', lineHeight: '1.6' }}>
