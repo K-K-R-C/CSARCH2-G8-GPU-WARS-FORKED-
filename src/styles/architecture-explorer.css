@@ -1,68 +1,74 @@
-.architecture-explorer {
+.arch-explorer{
     padding: 2rem;
-    background: #05060f;
-    border: 1px solid #1a2a1a;
-    border-radius: 18px;
-    color:#ffffff;
-    margin:3rem 0;
+    margin: 3rem 0;
+
+    background: rgba(14, 19, 24, .8);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+
+    color: var(--foreground);
+    font-family: var(--font-mono);
 }
 
-.explorer-header {
-    margin-bottom: 2rem;
+.arch-header {
+    margin-bottom: 0.5rem;
 }
 
-
-.explorer-header h3 {
-    font-size: 2rem;
-    color: #c9a84c;
+.arch-header h3 {
+    font-family: var(--font-orbitron);
+    font-size: 1.8rem;
+    color: var(--accent);
     margin-bottom: .5rem;
 }
 
-
-.explorer-header p {
-    color: #ffffff;
-    opacity: .8;
-    line-height: 1.6;
+.arch-header p {
+    color: #8a9aaa;
+    line-height: 2.0;
 }
 
-.gpu-tabs {
+.arch-tabs {
     display: flex;
-    gap: 12px;
+    gap: .7rem;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
 }
 
-.gpu-tab {
+.arch-tab {
     padding: .8rem 1.2rem;
-    background: #080d08;
-    color: #ffffff;
-    border: 1px solid #1a2a1a;
-    border-radius: 10px;
+    background: transparent;
+    color: #7aaa60;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: medium;
     cursor: pointer;
-    transition: .3s;
+    transition: .25s ease;
 }
 
-.gpu-tab:hover {
+.arch-tab:hover {
     transform: translateY(-3px);
-    border-color: #3a7a3a;
-    background: #1a2a1a;
+    background: rgba(74, 124, 63, .08);
+    border-color: var(--primary);
+    color: #c8f0b0;
 }
 
-.gpu-tab.active {
-    background: #3a7a3a;
-    border-color: #c9a84c;
-    font-weight: bold;
-    box-shadow: 0 0 15px rgba(58, 122, 58, .6);
+.arch-tab.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--primary-foreground);
+    box-shadow: 0 0 14px rgba(74, 124, 63, .35);
 }
 
-.gpu-info-card {
-    background: #080d08;
+.arch-card {
+    background: rgba(8, 20, 8, .35);
+    border: 1px solid var(--border);
+    border-radius: 4px;
     padding: 2rem;
-    border-radius: 16px;
-    border: 1px solid #1a2a1a;
-    box-shadow: 0 0 20px rgba(58, 122, 58, 100);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
 
-    animation:cardFade .80s ease;
+    animation: cardFade .8s ease;
 }
 
 @keyframes cardFade{
@@ -76,13 +82,14 @@
     }
 }
 
-.gpu-title {
-    color: #c9a84c;
-    font-size: 1.5rem;
-    border-bottom: 1px solid #3a7a3a;
+.arch-card h4 {
+    font-family: var(--font-orbitron);
+    color: #c8f0b0;
+    font-size: 1.45rem;
+    border-bottom: 1px solid var(--border);
     padding-bottom: 1rem;
-        
-    animation: titleSlide 2s ease;
+
+    animation: titleSlide 1s ease;
 }
 
 @keyframes titleSlide{
@@ -96,33 +103,49 @@
     }
 }
 
-.gpu-details {
+.arch-purpose{
+    color: #8a9aaa;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1.3rem 0;
+}
+
+.arch-purpose strong{
+    color: var(--accent);
+}
+
+.arch-details {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.gpu-details strong {
-    color: #3a7a3a;
+.arch-details strong {
+    display: block;
+    margin-bottom: .8rem;
+
+    color: var(--accent);
+
+    font-size: .95rem;
 }
 
-.gpu-details li {
+.arch-details li {
     line-height: 1.6;    
     opacity:0;
 
-    animation: fadeList 5s forwards;
+    animation: fadeList 1.5s forwards;
 }
 
-.gpu-details li:nth-child(1){
+.arch-details li:nth-child(1){
     animation-delay:.1s;
 }
 
-.gpu-details li:nth-child(2){
+.arch-details li:nth-child(2){
     animation-delay:.2s;
 }
 
-.gpu-details li:nth-child(3){
+.arch-details li:nth-child(3){
     animation-delay:.3s;
 }
 
@@ -139,29 +162,13 @@
     }
 
 }
-.gpu-image {
+.arch-image {
     width: 100%;
     max-height: 300px;
     object-fit: contain;
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 1rem;
     margin-bottom: 1.5rem;
 
-    animation:imageZoom 3s ease;
-}
-
-@keyframes imageZoom{
-    from{
-        opacity: 0;
-        transform: scale(.9);
-    }
-    to{
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.gpu-purpose{
-    font-size: 1.1rem;
-    margin: 1.2rem 0;
+    transform: translateX(-13px);
 }

@@ -84,7 +84,13 @@ export default function S01_Group8_ArchitectureExplorer() {
       </div>
 
       {/* Content Display Card */}
-      <div className="arch-card">
+      <div key={activeGpu.id} className="arch-card">
+        <img
+            src={activeGpu.image}
+            alt={activeGpu.imageAlt}
+            className="arch-image"
+        />
+
         <h4>{activeGpu.name}</h4>
         <p className="arch-purpose">
           <strong>Primary Purpose:</strong> {activeGpu.purpose}
