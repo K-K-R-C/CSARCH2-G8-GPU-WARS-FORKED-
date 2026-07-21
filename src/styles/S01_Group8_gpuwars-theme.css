@@ -27,7 +27,11 @@
 }
 
 /* Reset and base overrides for this exhibit layout */
-html, body {
+html.gpuwars-theme-html {
+  background: var(--background) !important;
+  background-color: var(--background) !important;
+}
+body.gpuwars-theme-body {
   background-color: var(--background) !important;
   color: var(--foreground) !important;
   font-family: var(--font-mono) !important;
