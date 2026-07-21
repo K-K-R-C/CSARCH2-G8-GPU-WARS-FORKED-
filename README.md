@@ -40,6 +40,18 @@ During the development for our final website, additional improvements were intro
 - Adding extra interactive component
 - Creating custom favicon
 
+## Feedback Addressed
+These improvements were made based on the feedback received after our mid-milestone submission
+
+1. **Merge all your sub-web into one web location**
+- Reorganized the exhibit into a single main exhibit page (01-main.mdx), letting the visitors navigate between all exhibit sections more properly through the use of navigation tabs and internal links.
+
+2. **Webpage needs for development.  Interactive elements lacking**
+- Refined the presentation of both existing interactive components, and also added another interactive element (shader lab), improved the website UI, and also added supporting images/visuals throughout the exhibit to make technical concepts more engaging and easier to understand.
+
+3. **Interactive readme could be improved.  Information lacking.  Suggest latest documentation iteration place on top.**
+- Reorganized this README file by placing the latest documentation at the top (ordered by most recent addition to least recent), expanded more on our technical/creative discussions, documented more developments/improvements we've done since mid-milestone submission, and included more detailed reflections, challenges and lessons learned while doing this project.
+
 ## All Things Done
 - Created 7 exhibit pages for viewers to explore through
     - 01-main.mdx (main page where users are welcomed into exhibit and have freedom to explore)
@@ -52,7 +64,7 @@ During the development for our final website, additional improvements were intro
 
 - Added disclosure of use of AI/LLM
 - Added references of the sites used for research
-- Verified the live deployment of the site via GitHub Pages
+- Verified the live deployment of the site via GitHub Pages (mid-milestone)
 - Documented the deployment setup, including CI/CD automation
 - Added deployment link to README
 
@@ -61,7 +73,7 @@ During the development for our final website, additional improvements were intro
 - Improved web content through visuals (images beside text to provide further context) and text formatting (proper formatting using TextWithImage.astro)
 - Improved presentation and design of interactive components
 - Added more to the disclosure of use of AI/LLM
-- Verified the live deployment of the site via GitHub Pages
+- Verified the live deployment of the site via GitHub Pages (final)
   - Checked that each navigating button (navigating tab under title, sector briefings section)/link works as intended
   - Compatible on mobile
 - Improved Readme into proper format (latest documentation at the top)
