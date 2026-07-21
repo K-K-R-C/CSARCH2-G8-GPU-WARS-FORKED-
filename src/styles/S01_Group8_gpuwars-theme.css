@@ -738,7 +738,7 @@ html, body {
   margin-bottom: 1rem;
 }
 .shader-panel-title {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   letter-spacing: 0.15em;
   color: #5a8a5a;
   margin-top: 0;
@@ -754,7 +754,7 @@ html, body {
 .shader-slider-label {
   display: flex;
   justify-content: space-between;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #7aaa60;
   margin-bottom: 0.25rem;
 }
