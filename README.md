@@ -53,6 +53,7 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
   - Checked that each navigating button (navigating tab under title, sector briefings section)/link works as intended
   - Compatible on mobile
 - Improved Readme into proper format (latest documentation at the top)
+- Added a custom site favicon 
 
 ## All Technical Discussions
 - The exhibit structure was changed from having multiple separate pages into one main exhibit page, which this time it allowed visitors to have a more proper museum-like experience, where all other sections and subpages can be accessed through navigation tabs and internal links.
@@ -60,6 +61,7 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
 - Existing React components (interactive timeline and architecture explorer) were refined to improve their presentation, and also so they matched the overall exhibit design.
 - Gave more attention to routing and path management after merging multiple subpages into one main page, where we tested the navigation links/buttons and sector briefing section (at the right) to make sure visitors could properly move between different sections.
 - Used GitHub Pages and GitHub Actions for deployment, and pushing to our main repository would automatically update/build/deploy our live website.
+- Implemented a custom favicon by adding the image to the public/ folder and referencing it in the shared layout file (S01_Group8_GPUWarsLayout.astro), so it appears consistently across all pages.
 
 ## All Creative Discussions
 - For the final design of our virtual exhibit, it was improved further (compared to our mid-milestone) to better match the original proposal theme of a modern technology virtual museum. It was also inspired through the famous franchise "Star Wars", to help with engaging the visitors and making this exhibit feel more immersive/captivating, hence the dark colors, structured layouts and futuristic design elements (stars in the background, timeline nodes, etc.).
@@ -76,6 +78,7 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
 
 - Reusable Astro components such as TextWithImage.astro made it so much more efficient to format text and images (and so it also made it easier to make changes related to web content).
 - Found out (the hard way) that merging branches really needs careful consideration of when changes were made (to be able to properly fix/keep track of merge conflicts, when branch modifies the same files as the main branch).
+- Discovered that import.meta.env.BASE_URL resolves differently between local dev and the production build — some paths needed an explicit trailing slash to resolve correctly once deployed, even though they worked fine locally.
 
 ## All Things learned
 - More knowledge and context behind GPU and how it developed over the years (and also its contributions in modern technology)
@@ -97,6 +100,7 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
   - Also including routing/pathing of our navigation tab/sector briefings section
 - Merging our work in Github with branches (having to fix conflicts between files, based on when it was last branched)
   - Recovering lost progress/files from merging issues
+  - Debugging a favicon that worked locally but not on the live site, traced it to a base URL path missing a slash in production, despite the exact same code working in local dev.
 
 ---
 
