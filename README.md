@@ -26,7 +26,19 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
 
 ---
 ## Proposal
-- 
+- The final exhibit continued to stay on track with the original proposal, focusing on the evolution of the GPU through five major turning points.
+
+These planned exhibit pages and sections were successfully implemented:
+- The History and Purpose of GPUs
+- The challenges before dedicated graphics hardware
+- Five major turning points in GPU development
+- GPU architecture evolution
+- Competition between GPU manufacturers
+- Its legacy, and impact on modern computing, AI, scientific research and competition
+
+During the development for our final website, additional improvements were introduced that were beyond our original proposal to enhance the visitors' experience, such as:
+- Adding extra interactive component
+- Creating custom favicon
 
 ## All Things Done
 - Created 7 exhibit pages for viewers to explore through
