@@ -139,6 +139,8 @@ Hayes, A. (2017, May 24). AMD vs. Nvidia: Who Dominates GPUs? Investopedia. http
 
 Box.co.uk. (2026). Box.Co.Uk. https://box.co.uk/blog/nvidia-amd-intel-gpu-comparison
 
+CADA. (2025, March 12). What is Phong Shading? (Guide with examples). Cada-Edu.Com; Copenhagen Academy of Digital Arts. https://cada-edu.com/guides/what-is-phong-shading
+
 ---
 
 # MID-MILESTONE DOCUMENTATION
