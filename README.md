@@ -25,8 +25,25 @@
 Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automatically rebuilds and redeploys whenever changes are pushed to the `main` branch.
 
 ---
+## Proposal
+- 
 
-## Things done
+## All Things Done
+- Created 7 exhibit pages for viewers to explore through
+    - 01-main.mdx (main page where users are welcomed into exhibit and have freedom to explore)
+    - 02-introduction.mdx (more of light context and definitions to strengthen base knowledge of GPUs)
+    - 03-before-gpus.mdx (Explains how computers handled graphics before GPUs existed, and how growing visual demands led to the creation of dedicated graphics hardware)
+    - 04-turning-points.mdx (Highlights 5 major moments in GPU history, also includes interactive timeline)
+    - 05-architecture.mdx (Explains how GPU designs evolved from simple graphics hardware into flexible and powerful processors built for graphics, computing, and AI)
+    - 06-gpu-wars.mdx (Explores how competition between GPU companies pushed innovation and shaped the powerful graphics and computing technologies we use today)
+    - 07-conclusion.mdx (Summarizes how GPUs evolved from graphics tools into essential technologies that power modern computing, AI, and other scientific advancements)
+
+- Added disclosure of use of AI/LLM (bottom of page)
+- Added references of the sites used for research (also at the bottom of page)
+- Verified the live deployment of the site via GitHub Pages
+- Documented the deployment setup, including CI/CD automation
+- Added deployment link to README
+
 - Merged the subpages into 1 main exhibit page (01-main.mdx is where users enter our exhibit, and the other subpages are accessible through there)
 - Improved the website/UI design (now matches our proposal accordingly)
 - Improved web content through visuals (images beside text to provide further context) and text formatting (proper formatting using TextWithImage.astro)
@@ -37,29 +54,44 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
   - Compatible on mobile
 - Improved Readme into proper format (latest documentation at the top)
 
-## Technical Discussions
+## All Technical Discussions
 - The exhibit structure was changed from having multiple separate pages into one main exhibit page, which this time it allowed visitors to have a more proper museum-like experience, where all other sections and subpages can be accessed through navigation tabs and internal links.
 - TextWithImage.astro was used to create reusable layouts for showing images/visuals alongside certain explanations/interactive components (this allowed for consistent presentation across the different subpages).
 - Existing React components (interactive timeline and architecture explorer) were refined to improve their presentation, and also so they matched the overall exhibit design.
 - Gave more attention to routing and path management after merging multiple subpages into one main page, where we tested the navigation links/buttons and sector briefing section (at the right) to make sure visitors could properly move between different sections.
 - Used GitHub Pages and GitHub Actions for deployment, and pushing to our main repository would automatically update/build/deploy our live website.
 
-## Creative Discussions
+## All Creative Discussions
 - For the final design of our virtual exhibit, it was improved further (compared to our mid-milestone) to better match the original proposal theme of a modern technology virtual museum. It was also inspired through the famous franchise "Star Wars", to help with engaging the visitors and making this exhibit feel more immersive/captivating, hence the dark colors, structured layouts and futuristic design elements (stars in the background, timeline nodes, etc.).
 - Visuals were added beside certain sections of our web content (mainly as supporting elements) so that non-experts could get more context and gain better understanding on technical GPU concepts, and to create better connections to their real-world hardware applications.
 - The flow and overall presentation focused on making a complex computer architecture topic approachable for a wider audience (for experts and non-experts alike).
   - Goal was to balance technical accuracy with engaging visuals/interactive components so that visitors without computer architecture background can still learn and understand why GPU and its evolution in history was so important, especially with today's modern era.
 
-## Aha Moments
+## All Aha Moments
+- A way to get around Github's file ordering is to add number ordering on the actual file names themselves
+- It's super important to pay attention to how configs are set up in astro.config.mjs, and also how the paths are written
+- Separating the timeline data from the React components made everything way easier to manage. We only had to update the data file whenever we added or changed GPU milestones instead of editing the component itself.
+- Learned that GitHub Actions handles the entire build-and-deploy process automatically once the workflow file is set up, no manual uploading needed
+- Realized the site rebuilds and redeploys on its own every time someone pushes to `main`
+
 - Reusable Astro components such as TextWithImage.astro made it so much more efficient to format text and images (and so it also made it easier to make changes related to web content).
 - Found out (the hard way) that merging branches really needs careful consideration of when changes were made (to be able to properly fix/keep track of merge conflicts, when branch modifies the same files as the main branch).
 
-## Things learned
+## All Things learned
+- More knowledge and context behind GPU and how it developed over the years (and also its contributions in modern technology)
+- General structures and how .jsx and .mdx files coordinate with each other.
+- Learned how to build reusable React components by passing data through props instead of hardcoding content.
+- How GitHub Pages and GitHub Actions work together for CI/CD
+
 - Gained more experience with Astro and MDX, mainly in combining static pages with reusable components.
 - Learned how to create more consistent layouts using Astro components, instead of manually styling each section.
 - Improved general understanding of how Git works (on branching, merging and fixing conflicts).
 
-## Challenges
+## All Challenges
+- Ordering the pages accordingly in the website (change file names, change paths for each link, etc.)
+- Learning and getting used to routing with astro (had to fix so many 404 errs)
+- Figuring out how to make the timeline interactive while keeping it reusable for future updates.
+
 - Figuring out how to properly embed/format images with our web content using TextWithImage.astro
 - Having to re-fix routing/pathing of links after merging subpages into 1 main page
   - Also including routing/pathing of our navigation tab/sector briefings section
@@ -149,7 +181,6 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
 - General structures and how .jsx and .mdx files coordinate with each other.
 - Learned how to build reusable React components by passing data through props instead of hardcoding content.
 - How GitHub Pages and GitHub Actions work together for CI/CD
--
 
 ## Challenges
 - Ordering the pages accordingly in the website (change file names, change paths for each link, etc.)
