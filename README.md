@@ -50,8 +50,8 @@ During the development for our final website, additional improvements were intro
     - 06-gpu-wars.mdx (Explores how competition between GPU companies pushed innovation and shaped the powerful graphics and computing technologies we use today)
     - 07-conclusion.mdx (Summarizes how GPUs evolved from graphics tools into essential technologies that power modern computing, AI, and other scientific advancements)
 
-- Added disclosure of use of AI/LLM (bottom of page)
-- Added references of the sites used for research (also at the bottom of page)
+- Added disclosure of use of AI/LLM
+- Added references of the sites used for research
 - Verified the live deployment of the site via GitHub Pages
 - Documented the deployment setup, including CI/CD automation
 - Added deployment link to README
@@ -60,7 +60,7 @@ During the development for our final website, additional improvements were intro
 - Improved the website/UI design (now matches our proposal accordingly)
 - Improved web content through visuals (images beside text to provide further context) and text formatting (proper formatting using TextWithImage.astro)
 - Improved presentation and design of interactive components
-- Added to the disclosure of use of AI/LLM
+- Added more to the disclosure of use of AI/LLM
 - Verified the live deployment of the site via GitHub Pages
   - Checked that each navigating button (navigating tab under title, sector briefings section)/link works as intended
   - Compatible on mobile
