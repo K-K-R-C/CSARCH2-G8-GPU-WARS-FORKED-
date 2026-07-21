@@ -1,5 +1,23 @@
 import { useState, useEffect, useRef } from "react";
 
+  const Slider = ({ label, value, min, max, step, onChange }) => (
+    <div className="shader-slider-group">
+      <div className="shader-slider-label">
+        <span>{label}</span>
+        <span className="shader-slider-value">{value.toFixed(2)}</span>
+      </div>
+      <input
+        type="range"
+        min={min}
+        max={max}
+        step={step}
+        value={value}
+        onChange={(e) => onChange(parseFloat(e.target.value))}
+        className="shader-range-input"
+      />
+    </div>
+  );
+  
 export default function S01_Group8_ShaderLab() {
   const canvasRef = useRef(null);
   const [ambient, setAmbient] = useState(0.3);
@@ -114,24 +132,6 @@ export default function S01_Group8_ShaderLab() {
     render();
     return () => cancelAnimationFrame(animRef.current);
   }, [ambient, diffuse, specular, shininess, lightX, lightY, colorR, colorG, colorB]);
-
-  const Slider = ({ label, value, min, max, step, onChange }) => (
-    <div className="shader-slider-group">
-      <div className="shader-slider-label">
-        <span>{label}</span>
-        <span className="shader-slider-value">{value.toFixed(2)}</span>
-      </div>
-      <input
-        type="range"
-        min={min}
-        max={max}
-        step={step}
-        value={value}
-        onChange={(e) => onChange(parseFloat(e.target.value))}
-        className="shader-range-input"
-      />
-    </div>
-  );
 
   return (
     <div className="shader-lab-grid">
