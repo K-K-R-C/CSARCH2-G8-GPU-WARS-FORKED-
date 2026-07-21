@@ -29,7 +29,7 @@ if (pathname.includes('04-turning-points')) {
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="gpuwars-theme-html">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,7 +39,7 @@ if (pathname.includes('04-turning-points')) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
     </head>
-    <body>
+    <body class="gpuwars-theme-body">
         <!-- Starfield Background -->
         <div class="starfield" id="starfield"></div>
 
@@ -70,8 +70,7 @@ if (pathname.includes('04-turning-points')) {
             <a href={`${baseUrl}/01-main`} class={activeTab === 'prologue' ? 'active' : ''}>PROLOGUE</a>
             <a href={`${baseUrl}/SO1_Group8_subpages/04-turning-points`} class={activeTab === 'timeline' ? 'active' : ''}>THE TIMELINE</a>
             <a href={`${baseUrl}/SO1_Group8_subpages/05-architecture`} class={activeTab === 'architecture' ? 'active' : ''}>THE ARCHITECTURE</a>
-            <!-- THE LAB is removed for now, to be returned later -->
-            <!-- <a href={`${baseUrl}/SO1_Group8_subpages/08-shader-lab`} class={activeTab === 'lab' ? 'active' : ''}>THE LAB</a> -->
+            <a href={`${baseUrl}/SO1_Group8_subpages/08-shader-lab`} class={activeTab === 'lab' ? 'active' : ''}>THE LAB</a>
             <a href={`${baseUrl}/SO1_Group8_subpages/06-gpu-wars`} class={activeTab === 'archives' ? 'active' : ''}>THE ARCHIVES</a>
         </nav>
 
@@ -122,12 +121,11 @@ if (pathname.includes('04-turning-points')) {
                         <p class="sec-title">SHADER REVOLUTION</p>
                         <p class="sec-desc">The Force becomes programmable. Artists gain the upper hand.</p>
                     </a>
-                    <!-- THE LAB is removed for now, to be returned later -->
-                    <!-- <a href={`${baseUrl}/SO1_Group8_subpages/08-shader-lab`} class="sidebar-sec-card highlight">
+                    <a href={`${baseUrl}/SO1_Group8_subpages/08-shader-lab`} class="sidebar-sec-card highlight">
                         <p class="sec-num">INTERACTIVE LAB</p>
                         <p class="sec-title">THE HOLODECK</p>
                         <p class="sec-desc">Manipulate shaders. See the rendering revolution in real time.</p>
-                    </a> -->
+                    </a>
                 </div>
 
                 <div class="intel-tags-section">
