@@ -50,7 +50,11 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
 - 
 
 ## Challenges
-- 
+- Figuring out how to properly embed/format images with our web content using TextWithImage.astro
+- Having to re-fix routing/pathing of links after merging subpages into 1 main page
+  - Also including routing/pathing of our navigation tab/sector briefings section
+- Merging our work in Github with branches (having to fix conflicts between files, based on when it was last branched)
+  - Recovering lost progress/files from merging issues
 
 ---
 
@@ -58,6 +62,7 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
 
 AI/LLM used:
 - ChatGPT (For generating general outline and page structure ideas, and also brainstorming different GPU topics/areas for further research)
+
 ---
 
 ## References
@@ -154,6 +159,7 @@ Deployed via **GitHub Pages**, using GitHub Actions for CI/CD. The site automati
 
 AI/LLM used:
 - ChatGPT (For generating general outline and page structure ideas, and also brainstorming different GPU topics/areas for further research)
+
 ---
 
 ## References
